@@ -21,6 +21,7 @@
         <?php
         if(isset($_GET['act'])){
         $act = $_GET['act'];
+        
         if($act == 'add'){
         include('member_form_add.php');
         }elseif ($act == 'edit') {
