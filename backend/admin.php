@@ -27,6 +27,9 @@ error_reporting( error_reporting() & ~E_NOTICE );
         }elseif ($act == 'edit') {
         include('admin_form_edit.php');
         }
+        elseif ($act == 'rwd') {
+        include('admin_form_rwd.php');
+        }
         }
         else {
         include('admin_list.php');
