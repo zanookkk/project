@@ -102,7 +102,7 @@ include('condb.php');  //ไฟล์เชื่อมต่อกับ databa
 
 //ทำการปรับปรุงข้อมูลที่จะแก้ไขลงใน database 
 	
-	$sql = "UPDATE tbl_product SET  
+	$sql = "UPDATE product SET  
 			p_name='$p_name',
 			type_id='$type_id', 
 			p_detail='$p_detail',
