@@ -19,11 +19,14 @@ error_reporting( error_reporting() & ~E_NOTICE );
         <p></p>
 
         <?php
+        if(isset($_GET['act'])){
         $act = $_GET['act'];
+
         if($act == 'add'){
         include('admin_form_add.php');
         }elseif ($act == 'edit') {
         include('admin_form_edit.php');
+        }
         }
         else {
         include('admin_list.php');

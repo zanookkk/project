@@ -19,11 +19,14 @@ error_reporting( error_reporting() & ~E_NOTICE );
         <p></p>
 
         <?php
+        if(isset($_GET['act'])){
         $act = $_GET['act'];
+
         if($act == 'add'){
         include('product_form_add.php');
         }elseif ($act == 'edit') {
         include('product_form_edit.php');
+        }
         }
         else {
         include('product_list.php');

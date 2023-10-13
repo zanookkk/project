@@ -19,11 +19,13 @@
         <p></p>
 
         <?php
+        if(isset($_GET['act'])){
         $act = $_GET['act'];
         if($act == 'add'){
         include('member_form_add.php');
         }elseif ($act == 'edit') {
         include('member_form_edit.php');
+        }
         }
         else {
         include('member_list.php');
