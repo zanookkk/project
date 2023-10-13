@@ -1,3 +1,14 @@
+<?php session_start(); 
+include('condb.php');
+
+  $user_id = $_SESSION['user_id'];
+  $a_name = $_SESSION['a_name'];
+  
+ 	if($user_id==''){
+    Header("Location: ../logout.php");  
+  }  
+?>
+
 <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>ร้านค้าออนไลน์</title>

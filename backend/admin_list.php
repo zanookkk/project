@@ -38,9 +38,9 @@ $(document).ready(function() {
       <td><?php echo $row_am['a_id']; ?></td>
       <td><?php echo $row_am['a_user']; ?></td>
       <td ><?php echo $row_am['a_name']; ?></td>
-      <td><a href="admin.php?act=rwd&ID=<?php echo $row_am['a_id']; ?>" class="btn btn-info btn-xs"> password </a> </td>
-      <td><a href="admin.php?act=edit&ID=<?php echo $row_am['a_id']; ?>" class="btn btn-warning btn-xs"> แก้ไข </a> </td>
-       <td><a href="admin_form_del_db.php?ID=<?php echo $row_am['a_id']; ?>" class='btn btn-danger btn-xs'  onclick="return confirm('ยันยันการลบ')">ลบ</a> </td>
+      <td><a href="admin.php?act=rwd&ID=<?php echo $row_am['a_id']; ?>" class="btn btn-info btn-sm"> password </a> </td>
+      <td><a href="admin.php?act=edit&ID=<?php echo $row_am['a_id']; ?>" class="btn btn-warning btn-sm"> แก้ไข </a> </td>
+       <td><a href="admin_form_del_db.php?ID=<?php echo $row_am['a_id']; ?>" class='btn btn-danger btn-sm'  onclick="return confirm('ยันยันการลบ')">ลบ</a> </td>
     </tr>
 
     <?php } while ($row_am =  mysqli_fetch_assoc($result)); ?>

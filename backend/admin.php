@@ -11,6 +11,7 @@ error_reporting( error_reporting() & ~E_NOTICE );
   <p></p>
     <div class="row">
       <div class="col-md-3">
+      สวัสดี คุณ <?php echo $a_name; ?>
         <?php include('menu_left.php');?>
       </div>
 
