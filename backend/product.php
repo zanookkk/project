@@ -6,7 +6,7 @@ error_reporting( error_reporting() & ~E_NOTICE );
 ?>
 <head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
   <?php include('navbar.php');?>
   <p></p>
     <div class="row">

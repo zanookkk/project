@@ -13,8 +13,8 @@
                       <tr>
                       <td>id</td>
                       <td>type</td>
-                      <td>แก้ไข</td>
-                      <td>ลบ</td>                 
+                      <td>edit</td>
+                      <td>delete</td>                 
                     </tr>";
                 
                   while($row = mysqli_fetch_array($result)) {

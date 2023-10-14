@@ -25,8 +25,8 @@ $(document).ready(function() {
   <thead>
     <tr class="info">    
     <th>id</th>
-    <th>a_user</th>
-    <th>a_name</th>
+    <th>username</th>
+    <th>name</th>
     <th>password</th>
     <th>edit</th>
     <th>delete</th>

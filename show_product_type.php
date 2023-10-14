@@ -1,11 +1,13 @@
-<?php 
-$query_product = "SELECT * FROM product as p INNER JOIN tbl_type as t ON p.type_id = t.type_id ORDER BY p.p_id ASC";
-$result_pro =mysqli_query($con, $query_product) or die ("Error in query: $query_product " . mysqli_error());
-  // echo($query_product);
+<?php
+$type_id = $_GET['type_id'];
+//echo $type_id;
+//exit();
+$query_product_type = "SELECT * FROM product as p INNER JOIN tbl_type as t ON p.type_id = t.type_id WHERE p.type_id = $type_id ORDER BY p.p_id ASC";
+$result_pro =mysqli_query($con, $query_product_type) or die ("Error in query: $query_product_type " . mysqli_error());
+   //echo($query_product_type);
   // exit()
+
 ?>
-
-
 <div class="row">
 
 <?php foreach ($result_pro as $row_pro) { ?>
@@ -27,8 +29,3 @@ $result_pro =mysqli_query($con, $query_product) or die ("Error in query: $query_
 
 
 </div>
-
-
-
-
-

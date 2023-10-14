@@ -12,11 +12,11 @@
                     echo "
                       <tr>
                       <td>id</td>
-                      <td>m_user</td>
-                      <td>m_pass</td>
-                      <td>m_name</td>
-                      <td>m_email</td>
-                      <td>m_address</td>
+                      <td>username</td>
+                      <td>password</td>
+                      <td width='10%'>name</td>
+                      <td>E-mail</td>
+                      <td>address</td>
                       <td>edit</td>
                       <td>delect</td>                 
                     </tr>";

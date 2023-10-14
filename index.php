@@ -2,7 +2,7 @@
 <?php include('h.php');?>
 <body>
 
-  <div class="container">
+  <div class="container-fluid">
     <?php include('navbar2.php');?>
     <img src="Dm3_201110_16.jpg" class="img-fluid" alt="Responsive image">
     <?php include('navbar.php'); ?>
@@ -12,8 +12,18 @@
         <?php include('menu.php'); ?>
       </div>
 
-    <div class="col-md-10">
-    <?php include('show_product.php'); ?>
+    <div class="col-md-9">
+    <?php  
+    $act = (isset($_GET['act'])? $_GET['act'] : '');
+    if($act=='showbytype'){
+      include('show_product_type.php');
+
+    }else{
+      include('show_product.php'); 
+      
+
+    }
+    ?>
 
     </div>
     </div>
